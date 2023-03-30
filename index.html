@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Quiz For Bootcamp Students</title>
+    <link rel="stylesheet" type="text/css" href="assets\style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div id="startQuiz">
+            <h2>Do you want to take a quiz</h2>
+            <h2>to test your knowledge of coding?</h2>
+        <button id="startbtn">Start The Quiz!</button>
+        <button id="startPageHighscore" onclick="showHighscore()">High Scores</button>
+        </div>
+
+        <div id="quiz">
+            <div id="timeRemaining">Time Remaining: </div>
+                <div id="quizQuestions"><p>Questions Placeholder</p></div>
+                    <button id="A" onclick="checkAnswer('a')">A</button>
+                    <button id="B" onclick="checkAnswer('b')">B</button>
+                    <button id="C" onclick="checkAnswer('c')">C</button>
+                    <button id="D" onclick="checkAnswer('d')">D</button>
+                <div id="result"></div>
+        </div>
+        <div id="endGame">
+
+            <div id="finalScore"></div>
+            <input type="text" size = "40" placeholder="Enter your initials to record your score!" name="intials" id="initials"/>
+            <button id="submitScore">Submit Your Score To The Leaderboard</button>
+        </div>
+        <div id=highscoreContainer>
+        <div id="highScorePage">
+            <div id="highscoreHeader">
+                <h3>Initials</h3>
+                <h3>Score</h3>
+            </div>
+            <div id = "highscoreInitials"></div>
+            <div id = "highScoreRecord"></div>
+        </div>
+        <div id="endGameBtns">
+            <button id="playAgain" onclick="replayQuiz()">Play Again?</button>
+            <button id="clearHighscore" onclick="clearScore()">Clear Highscores</button>
+        </div>
+    </div>
+    </div>
+    <script src="assets\script.js"></script>
+</body>
+</html>
